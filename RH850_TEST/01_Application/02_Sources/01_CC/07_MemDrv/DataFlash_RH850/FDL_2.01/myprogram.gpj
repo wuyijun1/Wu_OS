@@ -1,0 +1,13 @@
+#!gbuild
+[Program]
+	-object_dir=objs\myprogram
+	-ID:\HVACproject\WorkProccess\01_CC\06_CplxDrv\DataFlash_RH850\FDL_201
+dr7f701035.ld
+dr7f701035_startup.850
+fdl_descriptor.c
+fdl_user.c
+fdlapp_control.c
+fdlapp_main.c
+r_fdl_hw_access.c
+r_fdl_user_if.c
+r_fdl_user_if_init.c

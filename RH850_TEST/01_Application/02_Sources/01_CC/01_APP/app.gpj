@@ -1,0 +1,4 @@
+#!gbuild
+[Subproject]
+APP.c
+APP_Cfg.c

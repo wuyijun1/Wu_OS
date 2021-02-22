@@ -1,0 +1,5 @@
+---- OS_vMaxLoadStatisticStart Matches (4 in 3 files) ----
+FRAME.c (08_os\frame): void OS_vMaxLoadStatisticStart(void);
+FRAME.c (08_os\frame):static void OS_vMaxLoadStatisticStart(void)
+FRAME.h (08_os\frame):fram_ext  void OS_vMaxLoadStatisticStart(void);
+FRAME_Cfg.c (08_os\frame):	{&OS_vMaxLoadStatisticStart},

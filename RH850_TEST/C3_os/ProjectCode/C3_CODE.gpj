@@ -1,0 +1,12 @@
+#!gbuild
+[Program]
+	-object_dir=objs\C3_CODE
+	-ID:\HVACproject\C3_0S\ProjectCode\08_OS\DET
+	-ID:\HVACproject\C3_0S\ProjectCode\08_OS\FRAME
+	-ID:\HVACproject\C3_0S\ProjectCode\08_OS\IGN
+	-ID:\HVACproject\C3_0S\ProjectCode\08_OS\POW
+	-ID:\HVACproject\C3_0S\ProjectCode\09_McuDrv\Mcu_Cfg
+	-gcc
+09_McuDrv\RH850\RH850_Drv\_F1L_Map_NotBootLoader.ld
+09_McuDrv\MCU.gpj
+08_OS\OS.gpj

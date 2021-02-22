@@ -1,0 +1,15 @@
+#!gbuild
+[Program]
+	-object_dir=objs\myprogram
+	-ID:\HVACproject\WorkProccess\01_CC\06_CplxDrv\DataFlash_RH850_Doc\FDL\GHS_201517\RH850-F1x\Sample
+	-ID:\HVACproject\WorkProccess\01_CC\06_CplxDrv\DataFlash_RH850_Doc\FDL\GHS_201517\FDL
+	-ID:\HVACproject\WorkProccess\01_CC\06_CplxDrv\DataFlash_RH850_Doc\FDL\GHS_201517\FDL\lib
+GHS_201517\FDL\lib\r_fdl_hw_access.c
+GHS_201517\FDL\lib\r_fdl_user_if.c
+GHS_201517\FDL\lib\r_fdl_user_if_init.c
+GHS_201517\RH850-F1x\Sample\dr7f701035_startup.850
+GHS_201517\RH850-F1x\Sample\fdl_descriptor.c
+GHS_201517\RH850-F1x\Sample\fdl_user.c
+GHS_201517\RH850-F1x\Sample\fdlapp_control.c
+GHS_201517\RH850-F1x\Sample\fdlapp_main.c
+GHS_201517\RH850-F1x\Sample\dr7f701035.ld

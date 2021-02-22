@@ -1,0 +1,6 @@
+#!gbuild
+#component hello_world_lib_c
+[Library]
+	-object_dir=objs\libhello
+libhello.c
+libhello.h

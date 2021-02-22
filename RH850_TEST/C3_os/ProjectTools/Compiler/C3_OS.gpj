@@ -1,0 +1,13 @@
+#!gbuild
+primaryTarget=v800_standalone.tgt
+#component top_level_project
+[Project]
+	-bsp generic
+	-cpu=rh850g3k
+	-G
+	-object_dir=objs
+	:sourceDir=.
+	-c99
+	{optgroup=GhsCompilerOptions} -hex
+D:\HVACproject\C3_0S\ProjectCode\C3_CODE.gpj		[Program]
+tgt\resources.gpj		[Project]

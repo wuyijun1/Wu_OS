@@ -1,0 +1,12 @@
+#!gbuild
+[Program]
+	-I.\..\..\09_McuDrv\RH850\RH850_Drv
+	-object_dir=objs\Sources
+	-c99
+	{optgroup=GhsCompilerOptions} -hex
+	-I.\..\..\09_McuDrv\RH850\F1L_UsrCfg
+	-I.\..\..\09_McuDrv\Mcu_Cfg
+	-I.\..\..\07_MemDrv\DataFlash_RH850\FDL_2.01
+09_McuDrv\RH850\RH850_Drv\_F1L_Map_WithBootLoader.ld
+01_APP\app.gpj
+09_McuDrv\McuDrv.gpj

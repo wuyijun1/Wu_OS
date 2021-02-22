@@ -1,0 +1,972 @@
+Host OS:	Windows 7 Service Pack 1
+ELXR: Copyright (C) 1983-2014 Green Hills Software.  All Rights Reversed.
+Release: Compiler v2014.1.7
+Build Directory: [Directory] BTOWINBOX:c:/build_2014_1_bto/2014-09-04.2200-2014_1_bto/win32-comp-ecom
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2014-1-bto/src@515859 (built by build)
+Revision Date: Fri Sep 05 14:02:55 2014
+
+Release Date: Fri Sep 05 14:43:29 2014
+
+
+
+
+Load Map Sat May 27 15:40:38 2017
+Image Summary
+
+  Section              Base      Size(hex)    Size(dec)  SecOffs
+  .App_intvect         00000000  00000680         1664   0000160
+  .rozdata             00000680  00000000            0   0000000
+  .robase              00000680  00000000            0   0000000
+  .rosdata             00000680  00000000            0   0000000
+  .rodata              00000680  000014d8         5336   00007e0
+  .R_FDL_Const         00001b58  00000000            0   0000000
+  .fixaddr             00001b58  00000000            0   0000000
+  .fixtype             00001b58  00000000            0   0000000
+  .secinfo             00001b58  00000054           84   0001cb8
+  .syscall             00001bac  00000006            6   0001d0c
+  .romdata             00001bb4  00000084          132   0001d14
+  .romzdata            00001c38  00000000            0   0000000
+  .romsdata            00001c38  00000000            0   0000000
+  .romtdata            00001c38  00000000            0   0000000
+  .R_FDL_Text          00001c38  00000000            0   0000000
+  .text                00001c40  000117ee        71662   0001da0
+  .top_of_iROM_0       00060000  00000000            0   0000000
+  .ramtext             fedfc000  00000000            0   0000000
+  .tdata               fedfc000  00000000            0   0000000
+  .sdabase             fedfc000  00000000            0   0000000
+  .sdata               fedfc000  00000000            0   0000000
+  .sbss                fedfc000  00000000            0   0000000
+  .zdata               fedfc000  00000000            0   0000000
+  .zbss                fedfc000  00000000            0   0000000
+  .data                fedfc000  00000084          132   0001d14
+  .exec                fedfc100  00000000            0   0000000
+  .stack               fedfc100  00000800         2048   0000000
+  .top_of_iRAM_0       fee00000  00000000            0   0000000
+  .rdata               fee00000  00000000            0   0000000
+  .rbss                fee00000  00000000            0   0000000
+  .bss                 fee00000  000007dc         2012   0000000
+  .R_FDL_CodeRam       fee007dc  00000000            0   0000000
+  .R_FDL_Data          fee007dc  00000000            0   0000000
+  .top_of_iRAM_R       fee07800  00000000            0   0000000
+  .Not_Clear_RAM       fee07800  00000000            0   0000000
+  .top_of_RAM_NotClear fee08000  00000000            0   0000000
+  .note.renesas        00000000  00000028           40   0013590
+  .gstackfix           00000000  00000000            0   0000000
+
+Load Map Sat May 27 15:40:38 2017
+Module Summary
+
+  Origin+Size    Section          Module
+00001c40+0000f0  .text            crt0.o
+00000000+000028  .note.renesas    <RENESAS ABI INFO>
+00001d30+00e838  .text            MCU.o
+fedfc000+000058  .data            MCU.o
+00000000+000680  .App_intvect     MCU.o
+00000680+001470  .rodata          MCU.o
+00010568+000b0e  .text            POW.o
+fee0035c+000045  .bss             POW.o
+00011076+000244  .text            POW_If.o
+000112ba+000432  .text            IGN.o
+fee003a2+000019  .bss             IGN.o
+000116ec+0000fe  .text            Ign_If.o
+000117ea+0010e6  .text            FRAME.o
+fee003bc+000034  .bss             FRAME.o
+fedfc058+000006  .data            FRAME.o
+000128d0+00012c  .text            FRAME_Cfg.o
+00001af0+000068  .rodata          FRAME_Cfg.o
+000129fc+000308  .text            FRAME_If.o
+00012d04+000034  .text            DET.o
+fedfc05e+000004  .data            DET.o
+00012d38+000006  .text            libmulti.a
+fedfc064+000004  .data            libmulti.a
+fee003f0+0003e8  .bss             libmulti.a
+00012d3e+000066  .text            libansi.a(ccexit.o)
+00012db0+000060  .text            libstartup.a(ind_mset.o)
+00012e10+00035e  .text            libstartup.a(ind_crt0.o)
+00013170+000114  .text            libstartup.a(ind_mcpy.o)
+00013284+0000ac  .text            libsys.a(ind_exit.o)
+fee007d8+000004  .bss             libsys.a(ind_exit.o)
+00001bac+000006  .syscall         libsys.a(ind_dots.o)
+00013330+000022  .text            libsys.a(ind_call.o)
+00013352+0000ba  .text            libsys.a(ind_crt1.o)
+fedfc068+00001c  .data            libsys.a(ind_crt1.o)
+0001340c+000006  .text            libsys.a(ind_lock.o)
+00013412+00001c  .text            libsys.a(ind_errn.o)
+00001b58+000054  .secinfo         <section info>
+fee00000+00035c  COMMON -> .bss   <commons>
+
+Load Map Sat May 27 15:40:38 2017
+Global Symbols (sorted alphabetically)
+
+ .data            fedfc05c+000001 _Background_u8ActiveThreadNumber..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .data            fedfc05d+000001 _Background_u8OnThreadNumber..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .data            fedfc05e+000002 _DET_i16ErrLine..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CDET.
+ .data            fedfc060+000002 _DET_u16ErrType..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CDET.
+ .text            00012d04+000034 _DET_u16FatalErr
+ .text            00007d06+000004 _Debug
+ .text            00007e3c+000004 _EINTPRIO_0
+ .text            00007e40+000004 _EINTPRIO_1
+ .text            00007e64+000004 _EINTPRIO_10
+ .text            00007e68+000004 _EINTPRIO_11
+ .text            00007e6c+000004 _EINTPRIO_12
+ .text            00007e70+000004 _EINTPRIO_13
+ .text            00007e74+000004 _EINTPRIO_14
+ .text            00007e78+000004 _EINTPRIO_15
+ .text            00007e44+000004 _EINTPRIO_2
+ .text            00007e48+000004 _EINTPRIO_3
+ .text            00007e4c+000004 _EINTPRIO_4
+ .text            00007e50+000004 _EINTPRIO_5
+ .text            00007e54+000004 _EINTPRIO_6
+ .text            00007e58+000004 _EINTPRIO_7
+ .text            00007e5c+000004 _EINTPRIO_8
+ .text            00007e60+000004 _EINTPRIO_9
+ .text            00007cea+000004 _EITRAP0
+ .text            00007cee+000004 _EITRAP1
+ .text            00007da6+000096 _FEINT
+ .text            00007d12+000094 _FENMI
+ .text            00007ce6+000004 _FETRAPEX
+ .text            00007cf6+000004 _FPP_FPI
+ .rodata          00001af8+000008 _FRAME_axBackgroundActiveThread
+ .rodata          00001b44+000014 _FRAME_axBackgroundOnThread
+ .rodata          00001af0+000008 _FRAME_axForegroundActiveThread
+ .rodata          00001b30+000014 _FRAME_axForegroundOnThread
+ .text            00012900+000004 _FRAME_axGetBackgroundActiveThread
+ .text            00012904+000006 _FRAME_axGetBackgroundOnThread
+ .text            000128f4+000006 _FRAME_axGetForegroundActiveThread
+ .text            000128fa+000006 _FRAME_axGetForegroundOnThread
+ .bss             fee001c8+000010 _FRAME_u16Array
+ .bss             fee002ca+00003c _FRAME_u16BackOnMaxTaskTimeRec
+ .bss             fee00306+00003c _FRAME_u16BackOnTaskDtc
+ .bss             fee0028e+00003c _FRAME_u16BackOnTaskTimeNow
+ .bss             fee00216+00003c _FRAME_u16ForeOnMaxTaskTimeRec
+ .bss             fee00252+00003c _FRAME_u16ForeOnTaskDtc
+ .bss             fee001da+00003c _FRAME_u16ForeOnTaskTimeNow
+ .text            00012af4+000020 _FRAME_u16GetValue
+ .bss             fee003c4+000002 _FRAME_u16IDIgnIgn2IoStauts..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003c2+000002 _FRAME_u16IDIgnStable..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003c0+000002 _FRAME_u16IDIgnStaticOn..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003ce+000002 _FRAME_u16InternalDataBackgroudTick..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003d6+000002 _FRAME_u16InternalDataBackgroundRunEnable..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003da+000002 _FRAME_u16InternalDataErrorCode..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003c6+000002 _FRAME_u16InternalDataFlag1000MS_BG..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003c8+000002 _FRAME_u16InternalDataFlag1000MS_FG..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003cc+000002 _FRAME_u16InternalDataForegroudTick..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003d4+000002 _FRAME_u16InternalDataForegroundRunEnable..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003d8+000002 _FRAME_u16InternalDataSwVersion..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003ca+000002 _FRAME_u16InternalDataSysInfo..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003d2+000002 _FRAME_u16InternalDataTaskRunEnable..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003d0+000002 _FRAME_u16InternalDataTaskRunningTime..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003bc+000002 _FRAME_u16SleepCnt..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee001d8+000002 _FRAME_u16TaskTimeReg
+ .bss             fee0035b+000001 _FRAME_u8ForceSort
+ .text            000128d0+000002 _FRAME_v1msTaskSchedule
+ .text            00012466+00002a _FRAME_vActiveStautsCheck..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            000119d4+0000a8 _FRAME_vBackOnTaskTimeEnd
+ .text            000119b8+00001c _FRAME_vBackOnTaskTimeStart
+ .text            0001232a+000012 _FRAME_vCONActionActive..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00012372+000012 _FRAME_vCONActionActiveOn..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00012360+000012 _FRAME_vCONActionActiveStandby..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            000123ac+000010 _FRAME_vCONActionError..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            0001233c+000012 _FRAME_vCONActionOn..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00012384+000012 _FRAME_vCONActionOnActive..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00012318+000012 _FRAME_vCONActionStandby..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            0001234e+000012 _FRAME_vCONActionStandbyActive..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00012396+000016 _FRAME_vCONActionStandbyOn..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00012ac0+000034 _FRAME_vExpIDAll
+ .text            00012ab0+000008 _FRAME_vExpIDErrorCode..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME_If.
+ .text            00012ab8+000008 _FRAME_vExpIDSwInitTime..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME_If.
+ .text            00012aa8+000008 _FRAME_vExpIDSwVersion..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME_If.
+ .text            00012a90+000008 _FRAME_vExpIDSysBackground1s
+ .text            00012a98+000008 _FRAME_vExpIDSysForeground1s
+ .text            00012aa0+000008 _FRAME_vExpIDSysInfo..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME_If.
+ .text            000128d2+000002 _FRAME_vExtAlwaysTaskSchedule
+ .text            00012726+000060 _FRAME_vFRAMEAlways
+ .text            000122d0+000048 _FRAME_vFRAME_Background
+ .text            00011eb0+000074 _FRAME_vFRAME_BackgroundReset
+ .text            00012170+0000a0 _FRAME_vFRAME_BackgroundTaskActive
+ .text            000122ba+000016 _FRAME_vFRAME_BackgroundTaskErr
+ .text            00012210+0000aa _FRAME_vFRAME_BackgroundTaskOn
+ .text            00012128+000048 _FRAME_vFRAME_Foreground
+ .text            00011e3c+000074 _FRAME_vFRAME_ForegroundReset
+ .text            00011ff4+00008a _FRAME_vFRAME_ForegroundTaskActive
+ .text            00012112+000016 _FRAME_vFRAME_ForegroundTaskErr
+ .text            0001207e+000094 _FRAME_vFRAME_ForegroundTaskOn
+ .text            00012cda+000028 _FRAME_vFinalSleepCheck
+ .text            00011912+0000a6 _FRAME_vForeOnTaskTimeEnd
+ .text            000118f6+00001c _FRAME_vForeOnTaskTimeStart
+ .text            00011dee+00000e _FRAME_vFrameActive..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00011d34+000042 _FRAME_vFrameActiveOn
+ .text            000128d8+000002 _FRAME_vFrameActiveOnExt
+ .text            00011dfe+00003e _FRAME_vFrameActiveStandby
+ .text            00011c38+000012 _FRAME_vFrameActiveStandbyCfgIO
+ .text            000128de+000002 _FRAME_vFrameActiveStandbyCfgIOExt
+ .text            00011c4a+000020 _FRAME_vFrameActiveStandbyCfgPowSupply
+ .text            000128e0+000012 _FRAME_vFrameActiveStandbyExt
+ .text            00011f8c+000068 _FRAME_vFrameBackgroundTick1s
+ .text            00011f24+000068 _FRAME_vFrameForegroundTick1s
+ .text            00011dfc+000002 _FRAME_vFrameOn..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00011d76+000036 _FRAME_vFrameOnActive
+ .text            000128da+000002 _FRAME_vFrameOnActiveExt
+ .text            00011c92+000064 _FRAME_vFrameReset
+ .text            000128d4+000002 _FRAME_vFrameResetExt
+ .text            00011c6a+000028 _FRAME_vFrameStandby
+ .text            00011dac+000042 _FRAME_vFrameStandbyActive
+ .text            000128dc+000002 _FRAME_vFrameStandbyActiveExt
+ .text            000128f2+000002 _FRAME_vFrameUnusedPinCfg
+ .text            00011cf6+00003e _FRAME_vFrameWakeUp
+ .text            000128d6+000002 _FRAME_vFrameWakeUpExt
+ .text            00012cc6+00000a _FRAME_vHWdogClr
+ .text            00012bc6+00000c _FRAME_vHalDi
+ .text            00012bd2+00000c _FRAME_vHalEi
+ .text            00012c5e+000020 _FRAME_vHalIgnInit
+ .text            00012bde+000020 _FRAME_vHalIgnMain
+ .text            00012c1e+000020 _FRAME_vHalIgnReset
+ .text            00012cbe+000008 _FRAME_vHalInit
+ .text            00012c7e+000020 _FRAME_vHalPowInit
+ .text            00012bfe+000020 _FRAME_vHalPowMain
+ .text            00012c3e+000020 _FRAME_vHalPowReset
+ .text            00012ba4+000022 _FRAME_vHalStopMode
+ .text            00012c9e+000020 _FRAME_vHalSwWdtReset
+ .text            00012b5c+000024 _FRAME_vHalTaskTimeStart_DebugTimer
+ .text            00012b80+000024 _FRAME_vHalTaskTimeStop_DebugTimer
+ .text            00011888+00002c _FRAME_vHmiDataReset..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            000117ea+000042 _FRAME_vIDInputUpdate..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            0001182c+00005c _FRAME_vIDOutputUpdate..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00012b38+000024 _FRAME_vIfCloseRouser
+ .text            00012b14+000024 _FRAME_vIfOpenRouser
+ .text            00012a5c+000034 _FRAME_vImpIDHalIgn2IoStauts
+ .text            00012a3c+000020 _FRAME_vImpIDIgnIgn2IoStauts
+ .text            00012a1c+000020 _FRAME_vImpIDIgnStable
+ .text            000129fc+000020 _FRAME_vImpIDIgnStaticOn
+ .text            000125dc+000112 _FRAME_vMachineStateEmplement..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00012504+0000d8 _FRAME_vMachineStatusSet..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00012490+00001a _FRAME_vOnStautsCheck..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00012840+000002 _FRAME_vPeripheralInit
+ .text            000123e6+000028 _FRAME_vReadHwSleepStatus..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            0001240e+000028 _FRAME_vReadPtsSleepStatus..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            000123bc+00002a _FRAME_vReadSysSleepStatus..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00012cd0+00000a _FRAME_vRteProto_Update
+ .text            00012436+000030 _FRAME_vStandbyStautsCheck..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            000126ee+000026 _FRAME_vStateProcess..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            000124aa+00005a _FRAME_vSysSleepCount..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00011a7c+00001e _FRAME_vTaskTimeTick
+ .text            0001290a+0000f2 _FRAME_vTaskWdgDet
+ .text            00012786+0000ba _FRAME_vTick
+ .text            00012714+000012 _FRAME_vWdtHwReset..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .data            fedfc05a+000001 _Foreground_u8ActiveThreadNumber..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .data            fedfc05b+000001 _Foreground_u8OnThreadNumber..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee00358+000003 _Frame_OverflowTick
+ .bss             fee001c2+000006 _Frame_RunningTick
+ .rodata          00001b00+000030 _Frame_auAllTaskWdg
+ .text            00007ce2+000004 _HVTRAP
+ .text            0001141e+000078 _IGN_ifIgn2ExternInterrupt
+ .text            00011496+000002 _IGN_ifRemoteExternInterrupt
+ .bss             fee001a4+00001e _IGN_u16Array
+ .text            000117a4+000022 _IGN_u16GetValue
+ .bss             fee001a2+000002 _IGN_u16InternalDataErrorCode
+ .bss             fee003aa+000002 _IGN_u16InternalDataIGN2IoStatus..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003ac+000002 _IGN_u16InternalDataIgnStable..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003ae+000002 _IGN_u16InternalDataIgnStaticOn..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003a2+000002 _IGN_u16InternalDataOff2OnFlag..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003a6+000002 _IGN_u16InternalDataOff2OnFlag2..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003a4+000002 _IGN_u16InternalDataOn2OffFlag..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003a8+000002 _IGN_u16InternalDataOn2OffFlag2..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003b0+000002 _IGN_u16InternalDataSwVersion..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003b2+000002 _IGN_u16InternalDataSysIgnStatus..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003b8+000001 _IGN_u8ClientDebounceOff2OnTime..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003ba+000001 _IGN_u8ClientDebounceOff2OnTime2..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003b7+000001 _IGN_u8ClientDebounceOn2OffTime..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003b9+000001 _IGN_u8ClientDebounceOn2OffTime2..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003b5+000001 _IGN_u8DebounceOffTime..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003b4+000001 _IGN_u8DebounceOnTime..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .bss             fee003b6+000001 _IGN_u8NotStableTime..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .text            000113aa+000074 _IGN_vCheckSysIgnEvent..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .text            00011616+00001e _IGN_vDebounce..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .text            00011614+000002 _IGN_vDebounceClient..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .text            0001151c+000080 _IGN_vDebounceExt..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .text            0001159c+000078 _IGN_vDebounceExt2..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .text            000116b4+000002 _IGN_vDeinit
+ .text            00011754+000050 _IGN_vExpIDAll
+ .text            00011744+000008 _IGN_vExpIDIgnErrorCode..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIgn_If.
+ .text            00011724+000008 _IGN_vExpIDIgnIGN2FB
+ .text            0001171c+000008 _IGN_vExpIDIgnIGN2IoStatus
+ .text            000116ec+000008 _IGN_vExpIDIgnKeyPos..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIgn_If.
+ .text            000116f4+000008 _IGN_vExpIDIgnOff2OnFlag..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIgn_If.
+ .text            00011704+000008 _IGN_vExpIDIgnOff2OnFlag2..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIgn_If.
+ .text            00011714+000008 _IGN_vExpIDIgnOff2OnOrLeaveCrankDelayFlag..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIgn_If.
+ .text            000116fc+000008 _IGN_vExpIDIgnOn2OffFlag..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIgn_If.
+ .text            0001170c+000008 _IGN_vExpIDIgnOn2OffFlag2..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIgn_If.
+ .text            0001174c+000008 _IGN_vExpIDIgnRemoteIoStatus
+ .text            0001172c+000008 _IGN_vExpIDIgnStable..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIgn_If.
+ .text            00011734+000008 _IGN_vExpIDIgnStaticOn..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIgn_If.
+ .text            0001173c+000008 _IGN_vExpIDIgnSwVersion..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIgn_If.
+ .text            000117cc+00001e _IGN_vGetHwIgn2State
+ .text            000112ba+000040 _IGN_vHmiDataReset..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .text            000112fa+000008 _IGN_vIDInputUpdate..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .text            00011302+0000a8 _IGN_vIDOutputUpdate..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .text            000116b2+000002 _IGN_vInit
+ .text            000116b8+000034 _IGN_vMain
+ .text            00011654+00005e _IGN_vReset
+ .text            000117c6+000006 _IGN_vSetIDK15Config
+ .text            00011498+000084 _IGN_vSysDebounce..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .text            00011634+000020 _IGN_vSysIgnCheck..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CIGN.
+ .text            000116b6+000002 _IGN_vWakeUp
+ .text            00007d0a+000004 _MAE
+ .text            00001d30+000000 _MCUReset
+ .data            fedfc000+000004 _MCU_IntNest
+ .rodata          000007ec+000018 _MCU_stADCAAttribute
+ .rodata          00000764+000010 _MCU_stADCACfg
+ .rodata          00000804+000020 _MCU_stCSIGAttribute
+ .rodata          00000824+000018 _MCU_stCSIHAttribute
+ .rodata          00000774+000020 _MCU_stClockAttribute
+ .rodata          000008ac+0000a0 _MCU_stClockCfg_F1L
+ .bss             fee00000+000050 _MCU_stClockStatus
+ .bss             fee00090+000020 _MCU_stCsigRunStatus
+ .bss             fee000b0+000040 _MCU_stCsihRunStatus
+ .rodata          0000088c+00000c _MCU_stDMAAttribute
+ .rodata          0000164c+000140 _MCU_stDMACfg
+ .rodata          00001aa8+000048 _MCU_stEINTAttribute
+ .rodata          0000178c+000080 _MCU_stEINTCfg
+ .rodata          0000068c+000040 _MCU_stFEMICfg
+ .rodata          00000848+00000c _MCU_stFENMICfg
+ .bss             fee00084+00000c _MCU_stIICrunStatus
+ .rodata          000007a4+000030 _MCU_stInterruptCtrlAttribute
+ .rodata          0000086c+00000c _MCU_stOSTMAttribute
+ .rodata          00000854+00000c _MCU_stOSTMCfg
+ .rodata          000018e4+0000a0 _MCU_stPLL_CtrlValue
+ .rodata          00000878+000014 _MCU_stPWGAAttribute
+ .rodata          00000f0c+000250 _MCU_stPWGACfg
+ .rodata          00000e8c+000080 _MCU_stPinUserCfg_APort
+ .rodata          0000070c+000040 _MCU_stPinUserCfg_IPort
+ .rodata          000006cc+000040 _MCU_stPinUserCfg_JPort
+ .rodata          0000094c+000540 _MCU_stPinUserCfg_Port
+ .rodata          00001984+000048 _MCU_stPortAttribute
+ .rodata          000007d4+000018 _MCU_stRIICAttribute
+ .rodata          00000898+000014 _MCU_stRLIN3Attribute
+ .bss             fee00054+000030 _MCU_stRLIN3UartRunStatus
+ .rodata          000015bc+000090 _MCU_stRLIN3UsrCfg
+ .rodata          00000680+000008 _MCU_stResetCtrlAttribute
+ .rodata          00000860+00000c _MCU_stSTBCAttribute
+ .rodata          0000083c+00000c _MCU_stSTBCCfg
+ .rodata          0000115c+000460 _MCU_stTAUXCfg
+ .rodata          00001a54+000054 _MCU_stTAUxAttribute
+ .data            fedfc008+000050 _MCU_stTAUxClkDivCfg
+ .rodata          000019cc+000088 _MCU_stTAUxRegisterValue
+ .rodata          00000688+000004 _MCU_stWatchDogAttribute
+ .rodata          00000794+000010 _MCU_tsVoltageMonitorAttribute
+ .rodata          0000180c+000048 _MCU_tstCSIGCfg
+ .rodata          00001854+000090 _MCU_tstCSIHCfg
+ .rodata          0000074c+000018 _MCU_tstRIICCfg
+ .text            00004d4e+000040 _MCU_u16ADCgetResault
+ .text            00004ba8+000130 _MCU_u16ADCinit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00004cd8+00002c _MCU_u16ADCstart
+ .text            00004d04+000048 _MCU_u16ADCstop
+ .text            000060b0+00013e _MCU_u16CSIGinit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00006268+000136 _MCU_u16CSIHinit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00007522+00009a _MCU_u16ChangeVectorPriority
+ .text            00007b4a+000046 _MCU_u16ClockInit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            000077ca+000212 _MCU_u16DMADefaultSetup
+ .text            0000778c+00003e _MCU_u16DMAinit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            000075bc+0001d0 _MCU_u16DMAsetup
+ .text            00004afe+0000aa _MCU_u16EINTchgIntCondition
+ .text            00004ab8+000046 _MCU_u16EINTctrl
+ .text            0000497c+0000e0 _MCU_u16EINTinit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            000057ae+0000e4 _MCU_u16IIC_MasterReStartCondition
+ .text            00005a74+000172 _MCU_u16IIC_MasterRead
+ .text            00005636+0000b8 _MCU_u16IIC_MasterStartCondition..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            000056ee+0000c0 _MCU_u16IIC_MasterStopCondition..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00005914+000160 _MCU_u16IIC_MasterWrite
+ .text            00005374+0002c2 _MCU_u16IICinit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00007416+000098 _MCU_u16InterruptCtrl
+ .text            00007390+000086 _MCU_u16InterruptCtrl_FE
+ .text            000074ae+000074 _MCU_u16InterruptFlagClean
+ .text            0000734e+000042 _MCU_u16InterruptInit_FE
+ .text            000032fc+0000f6 _MCU_u16OSTMChgInterval
+ .text            00003246+0000b6 _MCU_u16OSTMctrl
+ .text            00003122+000124 _MCU_u16OSTMinit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            0000344a+000216 _MCU_u16PWGAinit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00002cfa+000428 _MCU_u16PinAltFunCfg
+ .text            000029e2+000318 _MCU_u16PinDirectCfg
+ .text            0000253c+000268 _MCU_u16PinRead
+ .text            000027a4+00023e _MCU_u16PinWrite
+ .text            0000251c+000020 _MCU_u16PortInit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00002310+0000fc _MCU_u16PortInit_APort..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            0000240c+000110 _MCU_u16PortInit_IPort..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00002094+00027c _MCU_u16PortInit_JPort..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00001d96+0002fe _MCU_u16PortInit_Port..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            000050e0+0000a6 _MCU_u16RLIN3UartCtrl
+ .text            00004fdc+000104 _MCU_u16RLIN3UartSend
+ .text            00004d8e+00024e _MCU_u16RLIN3Uart_Init..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            000038e0+000544 _MCU_u16TAUBD_Init
+ .text            00003e24+00050e _MCU_u16TAUJ_Init
+ .text            00003660+000108 _MCU_u16TAUxClkDivSetting..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00004332+00001c _MCU_u16TAUxInit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00004408+00004a _MCU_u16TAUxPpgGetMasterID..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00004640+00017c _MCU_u16TAUxPpgSetDuty
+ .text            00004452+0001ee _MCU_u16TAUxPpgSetHz
+ .text            0000434e+0000ba _MCU_u16TAUxSetCounter
+ .bss             fee00050+000004 _MCU_u32ADCAUsingUnit
+ .text            00007322+00002c _MCU_u32GetResetReason
+ .text            0000386c+000074 _MCU_u32GetTAUxClkFrequency
+ .text            0000724c+0000a0 _MCU_u32GetWakeUpFactor
+ .data            fedfc004+000004 _MCU_u32ResetReason
+ .text            00004890+000050 _MCU_u32TAUxGetCounter
+ .text            000048e0+00009c _MCU_u32TAUxGetTime
+ .text            00005892+000082 _MCU_u8IIC_GetSlaveIndex..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00004d4c+000002 _MCU_vADCIsr
+ .text            000061f6+000072 _MCU_vCSIG_Isr_Err
+ .text            000061f2+000004 _MCU_vCSIG_Isr_ReadUnitFinish
+ .text            000061ee+000004 _MCU_vCSIG_Isr_WriteUnitFinish
+ .text            0000641a+000004 _MCU_vCSIHJobLastData
+ .text            000063a6+000070 _MCU_vCSIH_Isr_Err
+ .text            00006416+000004 _MCU_vCSIH_Isr_JobFinish
+ .text            000063a2+000004 _MCU_vCSIH_Isr_ReadUnitFinsh
+ .text            0000639e+000004 _MCU_vCSIH_Isr_WriteUnitFinish
+ .text            0000665e+000414 _MCU_vClockInit_AWO..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            0000641e+000240 _MCU_vClockInit_Basic..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00006a72+00044e _MCU_vClockInit_ISO..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00007ae8+000002 _MCU_vDMADeInit
+ .text            000079dc+00010c _MCU_vDMAIsr
+ .text            00004a5c+00005c _MCU_vEINTIsr
+ .text            00007c38+000002 _MCU_vHWConfigCheck..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00007e7c+000090 _MCU_vISR_0_ICTAUD0I0_ICCSIH2IC_1
+ .text            0000af90+000066 _MCU_vISR_100_Reserved
+ .text            0000aff6+000066 _MCU_vISR_101_Reserved
+ .text            0000b05c+000066 _MCU_vISR_102_ICFLERR
+ .text            0000b0c2+000066 _MCU_vISR_103_ICFLENDNM
+ .text            0000b128+000066 _MCU_vISR_104_ICCWEND
+ .text            0000b18e+000066 _MCU_vISR_105_ICRCAN1ERR
+ .text            0000b1f4+000066 _MCU_vISR_106_ICRCAN1REC
+ .text            0000b25a+000066 _MCU_vISR_107_ICRCAN1TRX
+ .text            0000b2c0+00008e _MCU_vISR_108_ICCSIH1IC_ICTAPA0IPEK0_2
+ .text            0000b34e+00008e _MCU_vISR_109_ICCSIH1IR_ICTAPA0IVLY0_2
+ .text            000083c8+000066 _MCU_vISR_10_ICADCA0I0
+ .text            0000b3dc+00008e _MCU_vISR_110_ICCSIH1IRE_ICCSIG0IC_2
+ .text            0000b46a+00008e _MCU_vISR_111_ICCSIH1IJC_ICCSIG0IR_2
+ .text            0000b4f8+000066 _MCU_vISR_112_ICRLIN31
+ .text            0000b55e+00008e _MCU_vISR_113_ICRLIN31UR0
+ .text            0000b5ec+00008e _MCU_vISR_114_ICRLIN31UR1
+ .text            0000b67a+000066 _MCU_vISR_115_ICRLIN31UR2
+ .text            0000b6e0+000066 _MCU_vISR_116_ICPWGA20
+ .text            0000b746+000066 _MCU_vISR_117_ICPWGA21
+ .text            0000b7ac+000066 _MCU_vISR_118_ICPWGA22
+ .text            0000b812+000066 _MCU_vISR_119_ICPWGA23
+ .text            0000842e+000066 _MCU_vISR_11_ICADCA0I1
+ .text            0000b878+00008e _MCU_vISR_120_ICP6
+ .text            0000b906+00008e _MCU_vISR_121_ICP7
+ .text            0000b994+00008e _MCU_vISR_122_ICP8
+ .text            0000ba22+00008e _MCU_vISR_123_ICP12
+ .text            0000bab0+00008e _MCU_vISR_124_ICCSIH2IC_ICTAUD0I0_2
+ .text            0000bb3e+00008e _MCU_vISR_125_ICCSIH2IR_ICP0_2
+ .text            0000bbcc+00008e _MCU_vISR_126_ICCSIH2IRE_ICP1_2
+ .text            0000bc5a+00008e _MCU_vISR_127_ICCSIH2IJC_ICP2_2
+ .text            0000bce8+000066 _MCU_vISR_128_Reserved
+ .text            0000bd4e+000066 _MCU_vISR_129_Reserved
+ .text            00008494+000066 _MCU_vISR_12_ICADCA0I2
+ .text            0000bdb4+000066 _MCU_vISR_130_Reserved
+ .text            0000be1a+000066 _MCU_vISR_131_Reserved
+ .text            0000be80+000066 _MCU_vISR_132_Reserved
+ .text            0000bee6+000066 _MCU_vISR_133_Reserved
+ .text            0000bf4c+00008e _MCU_vISR_134_ICTAUB0I0
+ .text            0000bfda+00008e _MCU_vISR_135_ICTAUB0I1
+ .text            0000c068+00008e _MCU_vISR_136_ICTAUB0I2
+ .text            0000c0f6+00008e _MCU_vISR_137_ICTAUB0I3_ICPWGA16
+ .text            0000c184+00008e _MCU_vISR_138_ICTAUB0I4
+ .text            0000c212+00008e _MCU_vISR_139_ICTAUB0I5_ICPWGA17
+ .text            000084fa+000066 _MCU_vISR_13_ICDCUTDI
+ .text            0000c2a0+00008e _MCU_vISR_140_ICTAUB0I6
+ .text            0000c32e+00008e _MCU_vISR_141_ICTAUB0I7_ICPWGA18
+ .text            0000c3bc+00008e _MCU_vISR_142_ICTAUB0I8
+ .text            0000c44a+00008e _MCU_vISR_143_ICTAUB0I9_ICPWGA19
+ .text            0000c4d8+00008e _MCU_vISR_144_ICTAUB0I10
+ .text            0000c566+00008e _MCU_vISR_145_ICTAUB0I11_ICPWGA26
+ .text            0000c5f4+00008e _MCU_vISR_146_ICTAUB0I12
+ .text            0000c682+00008e _MCU_vISR_147_ICTAUB0I13_ICPWGA30
+ .text            0000c710+00008e _MCU_vISR_148_ICTAUB0I14
+ .text            0000c79e+00008e _MCU_vISR_149_ICTAUB0I15_ICPWGA31
+ .text            00008560+000066 _MCU_vISR_14_ICRCANGERR
+ .text            0000c82c+00008e _MCU_vISR_150_ICCSIH3IC_ICTAUD0I2_2
+ .text            0000c8ba+00008e _MCU_vISR_151_ICCSIH3IR_ICTAUD0I10_2
+ .text            0000c948+00008e _MCU_vISR_152_ICCSIH3IRE_ICTAUD0I12_2
+ .text            0000c9d6+00008e _MCU_vISR_153_ICCSIH3IJC_ICTAUD0I14_2
+ .text            0000ca64+000066 _MCU_vISR_154_ICRLIN22
+ .text            0000caca+000066 _MCU_vISR_155_ICRLIN23
+ .text            0000cb30+000066 _MCU_vISR_156_ICRLIN32
+ .text            0000cb96+00008e _MCU_vISR_157_ICRLIN32UR0
+ .text            0000cc24+00008e _MCU_vISR_158_ICRLIN32UR1
+ .text            0000ccb2+000066 _MCU_vISR_159_ICRLIN32UR2
+ .text            000085c6+000066 _MCU_vISR_15_ICRCANGRECC
+ .text            0000cd18+000090 _MCU_vISR_160_ICTAUJ1I0
+ .text            0000cda8+000090 _MCU_vISR_161_ICTAUJ1I1
+ .text            0000ce38+000090 _MCU_vISR_162_ICTAUJ1I2
+ .text            0000cec8+000090 _MCU_vISR_163_ICTAUJ1I3
+ .text            0000cf58+000066 _MCU_vISR_164_Reserved
+ .text            0000cfbe+000066 _MCU_vISR_165_Reserved
+ .text            0000d024+000066 _MCU_vISR_166_Reserved
+ .text            0000d08a+000066 _MCU_vISR_167_Reserved
+ .text            0000d0f0+000066 _MCU_vISR_168_Reserved
+ .text            0000d156+000066 _MCU_vISR_169_Reserved
+ .text            0000862c+000066 _MCU_vISR_16_ICRCAN0ERR
+ .text            0000d1bc+000066 _MCU_vISR_170_Reserved
+ .text            0000d222+000066 _MCU_vISR_171_Reserved
+ .text            0000d288+000066 _MCU_vISR_172_Reserved
+ .text            0000d2ee+000066 _MCU_vISR_173_Reserved
+ .text            0000d354+000066 _MCU_vISR_174_Reserved
+ .text            0000d3ba+000066 _MCU_vISR_175_Reserved
+ .text            0000d420+000066 _MCU_vISR_176_ICPWGA24
+ .text            0000d486+000066 _MCU_vISR_177_ICPWGA25
+ .text            0000d4ec+000066 _MCU_vISR_178_ICPWGA27
+ .text            0000d552+000066 _MCU_vISR_179_ICPWGA28
+ .text            00008692+000066 _MCU_vISR_17_ICRCAN0REC
+ .text            0000d5b8+000066 _MCU_vISR_180_ICPWGA29
+ .text            0000d61e+000066 _MCU_vISR_181_ICPWGA32
+ .text            0000d684+000066 _MCU_vISR_182_ICPWGA33
+ .text            0000d6ea+000066 _MCU_vISR_183_ICPWGA34
+ .text            0000d750+000066 _MCU_vISR_184_ICPWGA35
+ .text            0000d7b6+000066 _MCU_vISR_185_ICPWGA36
+ .text            0000d81c+000066 _MCU_vISR_186_ICPWGA37
+ .text            0000d882+000066 _MCU_vISR_187_ICPWGA38
+ .text            0000d8e8+000066 _MCU_vISR_188_ICPWGA39
+ .text            0000d94e+000066 _MCU_vISR_189_ICPWGA40
+ .text            000086f8+000066 _MCU_vISR_18_ICRCAN0TRX
+ .text            0000d9b4+000066 _MCU_vISR_190_ICPWGA41
+ .text            0000da1a+000066 _MCU_vISR_191_ICPWGA42
+ .text            0000da80+000066 _MCU_vISR_192_ICPWGA43
+ .text            0000dae6+000066 _MCU_vISR_193_ICPWGA44
+ .text            0000db4c+000066 _MCU_vISR_194_ICPWGA45
+ .text            0000dbb2+000066 _MCU_vISR_195_ICPWGA46
+ .text            0000dc18+000066 _MCU_vISR_196_ICPWGA47
+ .text            0000dc7e+00008e _MCU_vISR_197_ICP9
+ .text            0000dd0c+00008e _MCU_vISR_198_ICP13
+ .text            0000dd9a+00008e _MCU_vISR_199_ICP14
+ .text            0000875e+00008e _MCU_vISR_19_ICCSIG0IC_ICCSIH1IRE_1
+ .text            00007f0c+000090 _MCU_vISR_1_ICTAUD0I2_ICCSIH3IC_1
+ .text            0000de28+00008e _MCU_vISR_200_ICP15
+ .text            0000deb6+000066 _MCU_vISR_201_ICRTCA01S
+ .text            0000df1c+000066 _MCU_vISR_202_ICRTCA0AL
+ .text            0000df82+000066 _MCU_vISR_203_ICRTCA0R
+ .text            0000dfe8+000066 _MCU_vISR_204_ICADCA1ERR
+ .text            0000e04e+000066 _MCU_vISR_205_ICADCA1I0
+ .text            0000e0b4+000066 _MCU_vISR_206_ICADCA1I1
+ .text            0000e11a+000066 _MCU_vISR_207_ICADCA1I2
+ .text            0000e180+000066 _MCU_vISR_208_Reserved
+ .text            0000e1e6+000066 _MCU_vISR_209_ICRCAN2ERR
+ .text            000087ec+00008e _MCU_vISR_20_ICCSIG0IR_ICCSIH1IJC_1
+ .text            0000e24c+000066 _MCU_vISR_210_ICRCAN2REC
+ .text            0000e2b2+000066 _MCU_vISR_211_ICRCAN2TRX
+ .text            0000e318+000066 _MCU_vISR_212_ICRCAN3ERR
+ .text            0000e37e+000066 _MCU_vISR_213_ICRCAN3REC
+ .text            0000e3e4+000066 _MCU_vISR_214_ICRCAN3TRX
+ .text            0000e44a+00008e _MCU_vISR_215_ICCSIG1IC
+ .text            0000e4d8+00008e _MCU_vISR_216_ICCSIG1IR
+ .text            0000e566+00008e _MCU_vISR_217_ICCSIG1IRE
+ .text            0000e5f4+000066 _MCU_vISR_218_ICRLIN24
+ .text            0000e65a+000066 _MCU_vISR_219_ICRLIN25
+ .text            0000887a+00008e _MCU_vISR_21_ICCSIH0IC
+ .text            0000e6c0+000066 _MCU_vISR_220_ICRLIN33
+ .text            0000e726+00008e _MCU_vISR_221_ICRLIN33UR0
+ .text            0000e7b4+00008e _MCU_vISR_222_ICRLIN33UR1
+ .text            0000e842+000066 _MCU_vISR_223_ICRLIN33UR2
+ .text            0000e8a8+000066 _MCU_vISR_224_ICRLIN34
+ .text            0000e90e+00008e _MCU_vISR_225_ICRLIN34UR0
+ .text            0000e99c+00008e _MCU_vISR_226_ICRLIN34UR1
+ .text            0000ea2a+000066 _MCU_vISR_227_ICRLIN34UR2
+ .text            0000ea90+000066 _MCU_vISR_228_ICRLIN35
+ .text            0000eaf6+00008e _MCU_vISR_229_ICRLIN35UR0
+ .text            00008908+00008e _MCU_vISR_22_ICCSIH0IR
+ .text            0000eb84+00008e _MCU_vISR_230_ICRLIN35UR1
+ .text            0000ec12+000066 _MCU_vISR_231_ICRLIN35UR2
+ .text            0000ec78+000066 _MCU_vISR_232_ICPWGA48
+ .text            0000ecde+000066 _MCU_vISR_233_ICPWGA49
+ .text            0000ed44+000066 _MCU_vISR_234_ICPWGA50
+ .text            0000edaa+000066 _MCU_vISR_235_ICPWGA51
+ .text            0000ee10+000066 _MCU_vISR_236_ICPWGA52
+ .text            0000ee76+000066 _MCU_vISR_237_ICPWGA53
+ .text            0000eedc+000066 _MCU_vISR_238_ICPWGA54
+ .text            0000ef42+000066 _MCU_vISR_239_ICPWGA55
+ .text            00008996+00008e _MCU_vISR_23_ICCSIH0IRE
+ .text            0000efa8+000066 _MCU_vISR_240_ICPWGA56
+ .text            0000f00e+000066 _MCU_vISR_241_ICPWGA57
+ .text            0000f074+000066 _MCU_vISR_242_ICPWGA58
+ .text            0000f0da+000066 _MCU_vISR_243_ICPWGA59
+ .text            0000f140+000066 _MCU_vISR_244_ICPWGA60
+ .text            0000f1a6+000066 _MCU_vISR_245_ICPWGA61
+ .text            0000f20c+000066 _MCU_vISR_246_ICPWGA62
+ .text            0000f272+000066 _MCU_vISR_247_ICPWGA63
+ .text            0000f2d8+000090 _MCU_vISR_248_ICTAUB1I0
+ .text            0000f368+000090 _MCU_vISR_249_ICTAUB1I1
+ .text            00008a24+00008e _MCU_vISR_24_ICCSIH0IJC
+ .text            0000f3f8+000090 _MCU_vISR_250_ICTAUB1I2
+ .text            0000f488+000090 _MCU_vISR_251_ICTAUB1I3
+ .text            0000f518+000090 _MCU_vISR_252_ICTAUB1I4
+ .text            0000f5a8+000090 _MCU_vISR_253_ICTAUB1I5
+ .text            0000f638+000090 _MCU_vISR_254_ICTAUB1I6
+ .text            0000f6c8+000090 _MCU_vISR_255_ICTAUB1I7
+ .text            0000f758+000090 _MCU_vISR_256_ICTAUB1I8
+ .text            0000f7e8+000090 _MCU_vISR_257_ICTAUB1I9
+ .text            0000f878+000090 _MCU_vISR_258_ICTAUB1I10
+ .text            0000f908+000090 _MCU_vISR_259_ICTAUB1I11
+ .text            00008ab2+000066 _MCU_vISR_25_ICRLIN30
+ .text            0000f998+000090 _MCU_vISR_260_ICTAUB1I12
+ .text            0000fa28+000090 _MCU_vISR_261_ICTAUB1I13
+ .text            0000fab8+000090 _MCU_vISR_262_ICTAUB1I14
+ .text            0000fb48+000090 _MCU_vISR_263_ICTAUB1I15
+ .text            0000fbd8+000066 _MCU_vISR_264_ICRCAN4ERR
+ .text            0000fc3e+000066 _MCU_vISR_265_ICRCAN4REC
+ .text            0000fca4+000066 _MCU_vISR_266_ICRCAN4TRX
+ .text            0000fd0a+000066 _MCU_vISR_267_ICRLIN26
+ .text            0000fd70+000066 _MCU_vISR_268_ICRLIN27
+ .text            0000fdd6+000066 _MCU_vISR_269_ICPWGA64
+ .text            00008b18+00008e _MCU_vISR_26_ICRLIN30UR0
+ .text            0000fe3c+000066 _MCU_vISR_270_ICPWGA65
+ .text            0000fea2+000066 _MCU_vISR_271_ICPWGA66
+ .text            0000ff08+000066 _MCU_vISR_272_ICPWGA67
+ .text            0000ff6e+000066 _MCU_vISR_273_ICPWGA68
+ .text            0000ffd4+000066 _MCU_vISR_274_ICPWGA69
+ .text            0001003a+000066 _MCU_vISR_275_ICPWGA70
+ .text            000100a0+000066 _MCU_vISR_276_ICPWGA71
+ .text            00010106+000066 _MCU_vISR_277_ICRLIN28
+ .text            0001016c+000066 _MCU_vISR_278_ICRLIN29
+ .text            000101d2+000066 _MCU_vISR_279_ICRCAN5ERR
+ .text            00008ba6+00008e _MCU_vISR_27_ICRLIN30UR1
+ .text            00010238+000066 _MCU_vISR_280_ICRCAN5REC
+ .text            0001029e+000066 _MCU_vISR_281_ICRCAN5TRX
+ .text            00010304+000066 _MCU_vISR_282_Reserved
+ .text            0001036a+000066 _MCU_vISR_283_Reserved
+ .text            000103d0+000066 _MCU_vISR_284_Reserved
+ .text            00010436+000066 _MCU_vISR_285_Reserved
+ .text            0001049c+000066 _MCU_vISR_286_Reserved
+ .text            00010502+000066 _MCU_vISR_287_Reserved
+ .text            00008c34+000066 _MCU_vISR_28_ICRLIN30UR2
+ .text            00008c9a+00008e _MCU_vISR_29_ICP0_ICCSIH2IR_1
+ .text            00007f9c+000090 _MCU_vISR_2_ICTAUD0I4
+ .text            00008d28+00008e _MCU_vISR_30_ICP1_ICCSIH2IRE_1
+ .text            00008db6+00008e _MCU_vISR_31_ICP2_ICCSIH2IJC_1
+ .text            00008e44+000066 _MCU_vISR_32_ICWDTA0
+ .text            00008eaa+000066 _MCU_vISR_33_ICWDTA1
+ .text            00008f10+00008e _MCU_vISR_34_ICP3
+ .text            00008f9e+00008e _MCU_vISR_35_ICP4
+ .text            0000902c+00008e _MCU_vISR_36_ICP5
+ .text            000090ba+00008e _MCU_vISR_37_ICP10
+ .text            00009148+00008e _MCU_vISR_38_ICP11
+ .text            000091d6+000090 _MCU_vISR_39_ICTAUD0I1
+ .text            0000802c+000090 _MCU_vISR_3_ICTAUD0I6
+ .text            00009266+000090 _MCU_vISR_40_ICTAUD0I3
+ .text            000092f6+000090 _MCU_vISR_41_ICTAUD0I5
+ .text            00009386+000090 _MCU_vISR_42_ICTAUD0I7
+ .text            00009416+000090 _MCU_vISR_43_ICTAUD0I9
+ .text            000094a6+000090 _MCU_vISR_44_ICTAUD0I11
+ .text            00009536+000090 _MCU_vISR_45_ICTAUD0I13
+ .text            000095c6+000090 _MCU_vISR_46_ICTAUD0I15
+ .text            00009656+000066 _MCU_vISR_47_ICADCA0ERR
+ .text            000096bc+000066 _MCU_vISR_48_Reserved
+ .text            00009722+00008e _MCU_vISR_49_ICCSIG0IRE
+ .text            000080bc+000090 _MCU_vISR_4_ICTAUD0I8
+ .text            000097b0+000066 _MCU_vISR_50_ICRLIN20
+ .text            00009816+000066 _MCU_vISR_51_ICRLIN21
+ .text            0000987c+00008e _MCU_vISR_52_ICDMA0
+ .text            0000990a+00008e _MCU_vISR_53_ICDMA1
+ .text            00009998+00008e _MCU_vISR_54_ICDMA2
+ .text            00009a26+00008e _MCU_vISR_55_ICDMA3
+ .text            00009ab4+00008e _MCU_vISR_56_ICDMA4
+ .text            00009b42+00008e _MCU_vISR_57_ICDMA5
+ .text            00009bd0+00008e _MCU_vISR_58_ICDMA6
+ .text            00009c5e+00008e _MCU_vISR_59_ICDMA7
+ .text            0000814c+000090 _MCU_vISR_5_ICTAUD0I10_ICCSIH3IR_1
+ .text            00009cec+00008e _MCU_vISR_60_ICDMA8
+ .text            00009d7a+00008e _MCU_vISR_61_ICDMA9
+ .text            00009e08+00008e _MCU_vISR_62_ICDMA10
+ .text            00009e96+00008e _MCU_vISR_63_ICDMA11
+ .text            00009f24+00008e _MCU_vISR_64_ICDMA12
+ .text            00009fb2+00008e _MCU_vISR_65_ICDMA13
+ .text            0000a040+00008e _MCU_vISR_66_ICDMA14
+ .text            0000a0ce+00008e _MCU_vISR_67_ICDMA15
+ .text            0000a15c+000090 _MCU_vISR_68_ICRIIC0TI
+ .text            0000a1ec+000090 _MCU_vISR_69_ICRIIC0TEI
+ .text            000081dc+000090 _MCU_vISR_6_ICTAUD0I12_ICCSIH3IRE_1
+ .text            0000a27c+00008e _MCU_vISR_70_ICRIIC0RI
+ .text            0000a30a+00008e _MCU_vISR_71_ICRIIC0EE
+ .text            0000a398+000090 _MCU_vISR_72_ICTAUJ0I0
+ .text            0000a428+000090 _MCU_vISR_73_ICTAUJ0I1
+ .text            0000a4b8+000090 _MCU_vISR_74_ICTAUJ0I2
+ .text            0000a548+000090 _MCU_vISR_75_ICTAUJ0I3
+ .text            0000a5d8+00008e _MCU_vISR_76_ICOSTM0
+ .text            0000a666+000066 _MCU_vISR_77_ICENCA0IOV_ICPWGA4
+ .text            0000a6cc+000066 _MCU_vISR_78_ICENCA0IUD_ICPWGA5
+ .text            0000a732+000066 _MCU_vISR_79_ICENCA0I0_ICPWGA6
+ .text            0000826c+000090 _MCU_vISR_7_ICTAUD0I14_ICCSIH3IJC_1
+ .text            0000a798+000066 _MCU_vISR_80_ICENCA0I1_ICPWGA7
+ .text            0000a7fe+000066 _MCU_vISR_81_ICENCA0IEC
+ .text            0000a864+000066 _MCU_vISR_82_ICKR0
+ .text            0000a8ca+000066 _MCU_vISR_83_ICQFULL
+ .text            0000a930+000066 _MCU_vISR_84_ICPWGA0
+ .text            0000a996+000066 _MCU_vISR_85_ICPWGA1
+ .text            0000a9fc+000066 _MCU_vISR_86_ICPWGA2
+ .text            0000aa62+000066 _MCU_vISR_87_ICPWGA3
+ .text            0000aac8+000066 _MCU_vISR_88_ICPWGA8
+ .text            0000ab2e+000066 _MCU_vISR_89_ICPWGA9
+ .text            000082fc+000066 _MCU_vISR_8_ICTAPA0IPEK0_ICCSIH1IC_1
+ .text            0000ab94+000066 _MCU_vISR_90_ICPWGA10
+ .text            0000abfa+000066 _MCU_vISR_91_ICPWGA11
+ .text            0000ac60+000066 _MCU_vISR_92_ICPWGA12
+ .text            0000acc6+000066 _MCU_vISR_93_ICPWGA13
+ .text            0000ad2c+000066 _MCU_vISR_94_ICPWGA14
+ .text            0000ad92+000066 _MCU_vISR_95_ICPWGA15
+ .text            0000adf8+000066 _MCU_vISR_96_Reserved
+ .text            0000ae5e+000066 _MCU_vISR_97_Reserved
+ .text            0000aec4+000066 _MCU_vISR_98_Reserved
+ .text            0000af2a+000066 _MCU_vISR_99_Reserved
+ .text            00008362+000066 _MCU_vISR_9_ICTAPA0IVLY0_ICCSIH1IR_1
+ .text            00006ec0+00009e _MCU_vLowVoltDetectInit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00007b90+00002c _MCU_vNotExpINT
+ .text            00007bfa+00003e _MCU_vNotExpINT_u16
+ .text            00007bbc+00003e _MCU_vNotExpINT_u8
+ .text            000033f2+000058 _MCU_vOSTM_Isr
+ .text            00007c3a+000014 _MCU_vPortRelease..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            0000600a+0000a6 _MCU_vRIIC_Isr_Err
+ .text            00005dd8+000232 _MCU_vRIIC_Isr_ReadByteFinish
+ .text            00005be6+0001f2 _MCU_vRIIC_Isr_WriteByteFinish
+ .text            000052b4+0000c0 _MCU_vRLIN3UartIsr_Rx
+ .text            00005186+00012e _MCU_vRLIN3UartIsr_Tx
+ .text            000072ec+000036 _MCU_vResetCtrl_Reset
+ .text            00006fc8+0001cc _MCU_vStandbyCtrl_ChgToMode
+ .text            000071fc+000050 _MCU_vStandbyCtrl_CleanAllWakeUpFactor
+ .text            00006f5e+00006a _MCU_vStandbyCtrl_IoHold..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            00007194+000068 _MCU_vStandbyCtrl_SetWakeUpFactor..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .text            000047bc+0000d4 _MCU_vTAUxRunCtrl
+ .text            000037c2+0000aa _MCU_vTAUx_INTctrl
+ .text            00003768+00005a _MCU_vTAUx_Isr
+ .text            00007b2e+00001c _MCU_vWatchDogClean
+ .text            00007aea+000044 _MCU_vWatchDogInit..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CMCU.
+ .bss             fee000f0+000040 _MCU_vpDMA_CallBack
+ .text            00007cfe+000004 _MIP_MDP
+ .bss             fee003ee+000001 _OS_SysState..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .data            fedfc059+000001 _OS__u8Backgrond1sCount..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .data            fedfc058+000001 _OS__u8Foregrond1sCount..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee00130+000004 _OS_tenu16MaxLoadState
+ .bss             fee003be+000002 _OS_u16ForceSleep..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003de+000002 _OS_u16MaxBackLoadCounter..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003e4+000002 _OS_u16MaxBackLoadCounterTemp..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003ea+000002 _OS_u16MaxBackLoadRate..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003e0+000002 _OS_u16MaxFBLoadCounter..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003e6+000002 _OS_u16MaxFBLoadCounterTemp..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003ec+000002 _OS_u16MaxFBLoadRate..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003dc+000002 _OS_u16MaxForeLoadCounter..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003e2+000002 _OS_u16MaxForeLoadCounterTemp..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .bss             fee003e8+000002 _OS_u16MaxForeLoadRate..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+ .text            00011bea+00004e _OS_vMaxLoadStatisticClear
+ .text            00011aee+0000fc _OS_vMaxLoadStatisticEnd
+ .text            00011a9a+000054 _OS_vMaxLoadStatisticStart
+ .text            00007d02+000004 _PIE
+ .bss             fee00190+000012 _POW_tstPtsStatus
+ .bss             fee00368+000002 _POW_u16AppEnterHighVolTimerCfgShare..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00366+000002 _POW_u16AppEnterHighVoltageTimer..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00362+000002 _POW_u16AppEnterLowVoltageTimer..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00364+000002 _POW_u16AppLeaveHighVoltageTimer..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00360+000002 _POW_u16AppLeaveLowVoltageTimer..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0016c+000024 _POW_u16Array
+ .bss             fee0035c+000002 _POW_u16BattVolt..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00392+000002 _POW_u16CanEnterHighVoltageTimer..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0038e+000002 _POW_u16CanEnterLowVoltageTimer..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00394+000002 _POW_u16CanLeaveHighVoltageTimer..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00390+000002 _POW_u16CanLeaveLowVoltageTimer..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            000106a6+000026 _POW_u16ClrPtsStatus..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0039a+000002 _POW_u16DiagEnterHighVoltageTimer..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00396+000002 _POW_u16DiagEnterLowVoltageTimer..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0039c+000002 _POW_u16DiagLeaveHighVoltageTimer..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00398+000002 _POW_u16DiagLeaveLowVoltageTimer..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010f0a+000012 _POW_u16ForceIoControl_5vFb_Clr..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010ef2+000018 _POW_u16ForceIoControl_5vFb_Set..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010f46+00005a _POW_u16ForceIoControl_5vOutputCtrl..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010f34+000012 _POW_u16ForceIoControl_K30Fb_Clr..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010f1c+000018 _POW_u16ForceIoControl_K30Fb_Set..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            000111ba+000022 _POW_u16GetValue
+ .bss             fee00372+000002 _POW_u16IDHalIgn2Fb..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00370+000002 _POW_u16IDHalK30Fb..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0036e+000002 _POW_u16IDHalRaw5vOutputFb..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0035e+000002 _POW_u16IgnVolt..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0038c+000002 _POW_u16InternalData5vOutputFb..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0038a+000002 _POW_u16InternalData5vOutputStable..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00380+000002 _POW_u16InternalDataAdValid..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00374+000002 _POW_u16InternalDataAppHighVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00376+000002 _POW_u16InternalDataAppLowVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00378+000002 _POW_u16InternalDataComHighVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0037a+000002 _POW_u16InternalDataComLowVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0037c+000002 _POW_u16InternalDataDiagHighVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0037e+000002 _POW_u16InternalDataDiagLowVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00388+000002 _POW_u16InternalDataErrorCode..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00384+000002 _POW_u16InternalDataIGN2VoltFb..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00382+000002 _POW_u16InternalDataK30VoltFb..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee00386+000002 _POW_u16InternalDataSwVersion..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0039f+000001 _POW_u85vStableTime..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0039e+000001 _POW_u8AdValidTime..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee003a0+000001 _POW_u8BatAbnormalFlag..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010fa0+0000d6 _POW_u8ForceIoControl_Write
+ .bss             fee0036c+000002 _POW_u8IDIgnStable..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .bss             fee0036a+000002 _POW_u8IDIgnStaticOn..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010d40+000084 _POW_v5vOutputCtrl..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00011258+000024 _POW_v5vOutputDisable
+ .text            00011234+000024 _POW_v5vOutputEnable
+ .text            00010d12+00002e _POW_v5vOutputFbPro..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010e2e+00007e _POW_v5vOutputStableCheck..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010eee+000002 _POW_vActive
+ .text            00010dc4+00006a _POW_vAdValidCheck..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            000108ae+0000c8 _POW_vAppLowHighVoltageCheckK15..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            000107e8+0000c6 _POW_vAppLowHighVoltageCheckK30..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010a14+0000a0 _POW_vComLowHighVoltageCheckK15..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010976+00009e _POW_vComLowHighVoltageCheckK30..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010ef0+000002 _POW_vDeinit
+ .text            00010b2a+000078 _POW_vDiagLowHighVoltageCheckK15..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010ab4+000076 _POW_vDiagLowHighVoltageCheckK30..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00011162+000008 _POW_vExpID5vFbAdValue..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            0001115a+000008 _POW_vExpID5vOutputStable..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            00011132+000008 _POW_vExpIDAdValid..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            0001116a+000050 _POW_vExpIDAll
+ .text            0001110a+000008 _POW_vExpIDBattHighVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            00011102+000008 _POW_vExpIDBattLowVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            0001111a+000008 _POW_vExpIDComHighVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            00011112+000008 _POW_vExpIDComLowVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            0001112a+000008 _POW_vExpIDDiagHighVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            00011122+000008 _POW_vExpIDDiagLowVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            00011152+000008 _POW_vExpIDErrorCode..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            00011142+000008 _POW_vExpIDKl15FbAdValue..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            0001113a+000008 _POW_vExpIDKl30FbAdValue..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            0001114a+000008 _POW_vExpIDSwVersion..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW_If.
+ .text            000106cc+00004e _POW_vHmiDataReset..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010568+000052 _POW_vIDInputUpdate..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            000105ba+0000ec _POW_vIDOutputUpdate..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            000110fa+000008 _POW_vImpIDGet5vSensorSupplyFb
+ .text            000110b6+00001e _POW_vImpIDGetAnalogValue5VOutputFb
+ .text            000110d4+00001e _POW_vImpIDGetAnalogValueBatFb
+ .text            000110f2+000008 _POW_vImpIDGetAnalogValueIgn2Fb
+ .text            00011096+000020 _POW_vImpIDIgnStable
+ .text            00011076+000020 _POW_vImpIDIgnStaticOn
+ .text            00010790+000002 _POW_vInit
+ .text            00010ba6+00006e _POW_vLowHighVoltageCheck..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010eac+000040 _POW_vMain
+ .text            000111e4+000008 _POW_vMcuSupplyDisable
+ .text            000111dc+000008 _POW_vMcuSupplyEnable
+ .text            00010eec+000002 _POW_vObdMain
+ .text            00010c14+00000e _POW_vReadBatVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010c22+00000e _POW_vReadIgnVoltage..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010ba4+000002 _POW_vRef4LowHighVoltageCheckK15..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010ba2+000002 _POW_vRef4LowHighVoltageCheckK30..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            0001071a+000076 _POW_vReset
+ .text            00011210+000024 _POW_vSensorSupplyDisable
+ .text            000111ec+000024 _POW_vSensorSupplyEnable
+ .text            000112a4+000016 _POW_vSupplyOff
+ .text            0001127c+000016 _POW_vSupplyReset
+ .text            00011292+000012 _POW_vSupplyWakeup
+ .text            00010c30+00004c _POW_vVoltageAbnormalCheck..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010c7c+000096 _POW_vVoltageCheck..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CPOW.
+ .text            00010792+000056 _POW_vWakeUp
+ .text            00007cf2+000004 _RIEX
+ .text            00007d0e+000004 _Reserved
+ .text            00007cde+000004 _SYSERR
+ .bss             fee00342+000016 _SYS_frame
+ .text            0001286c+000064 _SYS_u8ForceIoControl_Write
+ .text            00012842+000002 _SYS_vActive
+ .text            00012846+000002 _SYS_vDeinit
+ .text            00012848+000002 _SYS_vInit
+ .text            0001284a+000002 _SYS_vInterfaceDataUpdate
+ .text            00012844+000002 _SYS_vMain
+ .text            0001284c+000020 _SYS_vMainLoop
+ .text            00012d02+000002 _SYS_vPeripheralInit
+ .text            000118b4+000042 _TestECircle
+ .text            00007cfa+000004 _UCPOP
+ .text            00013284+00006a __Exit
+                  00000000+000000 ___atexit_cleanup_func
+                  00000000+000000 ___cpp_exception_cleanup
+                  00000000+000000 ___cpp_exception_init
+ .syscall         00001bac+000006 ___dotsyscall
+ .text            0001341c+000008 ___gh_errno_ptr
+ .text            00013424+00000a ___gh_get_errno
+                  00000000+000000 ___gh_iob_init
+ .text            00013410+000002 ___gh_lock_init
+ .text            00013412+00000a ___gh_set_errno
+ .text            0001340c+000002 ___ghsLock
+ .text            0001340e+000002 ___ghsUnlock
+                  00000000+000000 ___ghs_GetCurrentThreadID
+                  00000000+000000 ___ghs_GetCurrentThreadName
+                  00000000+000000 ___ghs_InterruptLock
+                  00000000+000000 ___ghs_InterruptUnlock
+                  00000000+000000 ___ghs_RunTimeErrorDetected
+ .text            000132ee+000042 ___ghs_at_exit
+                  00000000+000000 ___ghs_board_cache_sync
+                  00000000+000000 ___ghs_board_devices_init
+                  00000000+000000 ___ghs_board_memory_init
+                  00000000+000000 ___ghs_call_table
+                  00000000+000000 ___ghs_checksum
+                  00000000+000000 ___ghs_coverage_init
+                  00000000+000000 ___ghs_cpp_exception_cleanup
+                  00000000+000000 ___ghs_cpp_exception_init
+                  00000000+000000 ___ghs_decompress
+ .text            00012e10+00035e ___ghs_ind_crt0
+ .text            00013352+0000ba ___ghs_ind_crt1
+ .syscall         00001bac+000006 ___ghs_initial_dotsyscall
+                  00000002+000000 ___ghs_log_fee_level
+                  00000000+000000 ___ghs_manprf_init
+                  00000000+000000 ___ghs_rambootcodeend
+                  00000000+000000 ___ghs_rambootcodestart
+                  fee00000+000000 ___ghs_ramend
+                  fedfc000+000000 ___ghs_ramstart
+                  00000000+000000 ___ghs_rombootcodeend
+                  00000000+000000 ___ghs_rombootcodestart
+                  00060000+000000 ___ghs_romend
+                  00000000+000000 ___ghs_romstart
+                  fee07800+000000 ___ghs_rramend
+                  fee00000+000000 ___ghs_rramstart
+                  00000000+000000 ___ghs_set_stack_chk_guard
+ .text            00013330+000022 ___ghs_syscall
+                  00000000+000000 ___ghs_undefined_func
+ .fixaddr         00001b58+000000 ___ghsbegin_fixaddr
+ .fixtype         00001b58+000000 ___ghsbegin_fixtype
+                  00000000+000000 ___ghsbegin_picbase
+                  00000000+000000 ___ghsbegin_pidbase
+ .robase          00000680+000000 ___ghsbegin_robase
+                  00000000+000000 ___ghsbegin_sda_end
+                  00000000+000000 ___ghsbegin_sda_start
+ .sdabase         fedfc000+000000 ___ghsbegin_sdabase
+ .secinfo         00001b58+000000 ___ghsbegin_secinfo
+ .secinfo         00001b7c+000000 ___ghsbinfo_aclear
+ .secinfo         00001bac+000000 ___ghsbinfo_acopy
+ .secinfo         00001bac+000000 ___ghsbinfo_bcopy
+ .secinfo         00001b58+000024 ___ghsbinfo_clear
+ .secinfo         00001bac+000000 ___ghsbinfo_comacopy
+ .secinfo         00001bac+000000 ___ghsbinfo_comcopy
+ .secinfo         00001bac+000000 ___ghsbinfo_comtcopy
+ .secinfo         00001b7c+000030 ___ghsbinfo_copy
+ .secinfo         00001bac+000000 ___ghsbinfo_tcopy
+ .secinfo         00001bac+000000 ___ghseinfo_bcopy
+ .secinfo         00001b7c+000000 ___ghseinfo_clear
+ .secinfo         00001bac+000000 ___ghseinfo_comcopy
+ .secinfo         00001bac+000000 ___ghseinfo_copy
+ .fixaddr         00001b58+000000 ___ghsend_fixaddr
+ .fixtype         00001b58+000000 ___ghsend_fixtype
+ .stack           fedfc900+000000 ___ghsend_stack
+ .text            00007c4e+000004 ___low_level_init
+ .text            00013260+000024 ___mcopy
+                  00000000+000000 __cleanup
+ .tdata           fedfc000+000000 __ep
+ .text            00013284+00006a __exit
+                  00000000+000000 __ghs_v800_r20_initializer
+                  00000000+000000 __ghs_v800_r21_initializer
+                  00000000+000000 __ghs_v800_sda_model
+ .sdabase         fee04000+000000 __gp
+ .bss             fee00134+000030 __multiArgs
+ .data            fedfc064+000004 __multibufSize
+ .bss             fee003f0+0003e8 __multibuffer
+ .text            00012d38+000004 __multiend
+ .text            00001c40+0000ce __start
+ .rosdata         00008680+000000 __tp
+ .bss             fee00164+000004 _environ
+ .bss             fee00168+000004 _errno
+ .text            00012d3e+000066 _exit
+ .text            00007c52+00008c _main
+ .text            00013170+0000f0 _memcpy
+ .text            00012db0+000060 _memset
+ .text            00012d3c+000002 _multiBreak
+ .text            00012d38+000000 _multiCall
+ .bss             fee003ef+000001 _reverse1..D.3A.5CHVACproject.5CC3_0S.5CProjectTools.5CCompiler.5Cobjs.5CC3_CODE.5CFRAME.
+                  00000000+000000 _undefined_cleanup
+                  00000000+000000 _undefined_cleanup_func

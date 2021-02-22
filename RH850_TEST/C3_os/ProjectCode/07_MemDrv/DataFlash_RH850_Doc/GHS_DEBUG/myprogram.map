@@ -1,0 +1,271 @@
+Host OS:	Windows 7 Service Pack 1
+ELXR: Copyright (C) 1983-2014 Green Hills Software.  All Rights Reversed.
+Release: Compiler v2014.1.7
+Build Directory: [Directory] BTOWINBOX:c:/build_2014_1_bto/2014-09-04.2200-2014_1_bto/win32-comp-ecom
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2014-1-bto/src@515859 (built by build)
+Revision Date: Fri Sep 05 14:02:55 2014
+
+Release Date: Fri Sep 05 14:43:29 2014
+
+
+
+
+Load Map Tue Jan 10 11:54:51 2017
+Image Summary
+
+  Section              Base      Size(hex)    Size(dec)  SecOffs
+  .intvect             00000000  00000668         1640   0000200
+  .intvect_end         00000668  00000000            0   0000000
+  .rozdata             00000668  00000000            0   0000000
+  .robase              00000668  00000000            0   0000000
+  .rosdata             00000668  00000000            0   0000000
+  .rodata              00000668  00000108          264   0000868
+  .text                00000770  00000b1e         2846   0000970
+  .fixaddr             00001290  00000000            0   0000000
+  .fixtype             00001290  00000000            0   0000000
+  .secinfo             00001290  00000054           84   0001490
+  .syscall             000012e4  00000006            6   00014e4
+  .romdata             000012ec  00000020           32   00014ec
+  .romzdata            0000130c  00000000            0   0000000
+  .romsdata            0000130c  00000000            0   0000000
+  .romtdata            0000130c  00000000            0   0000000
+  .R_FDL_Text          0000130c  00001d8c         7564   000150c
+  .R_FDL_Const         00003098  00000013           19   0003298
+  .bcode               01000000  00000000            0   0000000
+  .bconst              01000000  00000000            0   0000000
+  .top_of_ROM_BOOT     01008000  00000000            0   0000000
+  .data                fede0000  00000020           32   00014ec
+  .bss                 fede0020  00000428         1064   0000000
+  .sdabase             fede0448  00000000            0   0000000
+  .sdata               fede0448  00000000            0   0000000
+  .sbss                fede0448  00000000            0   0000000
+  .zdata               fede0448  00000000            0   0000000
+  .zbss                fede0448  00000000            0   0000000
+  .ramtext             fede0480  00000000            0   0000000
+  .tdata               fede0480  00000000            0   0000000
+  .exec                fede0480  00000000            0   0000000
+  .stack               fede0480  00000800         2048   0000000
+  .R_FDL_Data          fede0c80  00000064          100   0000000
+  .R_FDL_CodeRam       fede0ce4  00000100          256   0000000
+  .heapbase            fede0de4  00000000            0   0000000
+  .heap                fede0de4  0001f21c       127516   0000000
+  .top_of_RAM          fee00000  00000000            0   0000000
+  .sldata              fedd8000  00000000            0   0000000
+  .slbss               fedd8000  00000000            0   0000000
+  .top_of_RAM_0        fede0000  00000000            0   0000000
+  .rdata               fee00000  00000000            0   0000000
+  .rbss                fee00000  00000000            0   0000000
+  .top_of_RAM_R        fee08000  00000000            0   0000000
+  .note.renesas        00000000  0000003c           60   00032ac
+  .gstackfix           00000000  00000000            0   0000000
+
+Load Map Tue Jan 10 11:54:51 2017
+Module Summary
+
+  Origin+Size    Section          Module
+00000770+0000f0  .text            crt0.o
+00000000+00003c  .note.renesas    <RENESAS ABI INFO>
+0000130c+000f1e  .R_FDL_Text      r_fdl_hw_access.o
+0000222a+000e44  .R_FDL_Text      r_fdl_user_if.o
+fede0c80+000064  .R_FDL_Data      r_fdl_user_if.o
+00003098+000013  .R_FDL_Const     r_fdl_user_if.o
+fede0ce4+000100  .R_FDL_CodeRam   r_fdl_user_if.o
+0000306e+00002a  .R_FDL_Text      r_fdl_user_if_init.o
+00000860+00005a  .text            dr7f701035_startup.o
+00000000+000668  .intvect         dr7f701035_startup.o
+00000668+000008  .rodata          fdl_descriptor.o
+000008ba+00003e  .text            fdl_user.o
+000008f8+0001ca  .text            fdlapp_control.o
+00000670+000100  .rodata          fdlapp_control.o
+00000ac2+0000dc  .text            fdlapp_main.o
+00000b9e+000006  .text            libmulti.a
+fede0000+000004  .data            libmulti.a
+fede005c+0003e8  .bss             libmulti.a
+00000ba4+000066  .text            libansi.a(ccexit.o)
+00000c0a+00035e  .text            libstartup.a(ind_crt0.o)
+00000f70+000060  .text            libstartup.a(ind_mset.o)
+00000fd0+000114  .text            libstartup.a(ind_mcpy.o)
+000010e4+0000ac  .text            libsys.a(ind_exit.o)
+fede0444+000004  .bss             libsys.a(ind_exit.o)
+000012e4+000006  .syscall         libsys.a(ind_dots.o)
+00001190+000022  .text            libsys.a(ind_call.o)
+000011b2+0000ba  .text            libsys.a(ind_crt1.o)
+fede0004+00001c  .data            libsys.a(ind_crt1.o)
+0000126c+000006  .text            libsys.a(ind_lock.o)
+00001272+00001c  .text            libsys.a(ind_errn.o)
+00001290+000054  .secinfo         <section info>
+fede0020+00003c  COMMON -> .bss   <commons>
+
+Load Map Tue Jan 10 11:54:51 2017
+Global Symbols (sorted alphabetically)
+
+ .intvect         00000000+000000 .intvect..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cdr7f701035_startup.
+                  00000000+000000 _CKSC_CPUCLKD_ACT
+                  00000000+000000 _CKSC_CPUCLKD_CTL
+                  00000000+000000 _CKSC_CPUCLKS_ACT
+                  00000000+000000 _CKSC_CPUCLKS_CTL
+ .text            000008f6+000002 _FDL_Close
+ .text            000008ec+00000a _FDL_Open
+ .text            000008ba+00001e _FDL_User_CriticalSetionBegin
+ .text            000008d8+000014 _FDL_User_CriticalSetionEnd
+                  00000000+000000 _MOSCC
+                  00000000+000000 _MOSCE
+                  00000000+000000 _MOSCS
+                  00000000+000000 _MOSCST
+                  00000000+000000 _PLLC
+                  00000000+000000 _PLLE
+                  00000000+000000 _PLLS
+                  00000000+000000 _PROTCMD0
+                  00000000+000000 _PROTCMD1
+ .bss             fede0020+000004 _PSWSafe
+ .text            00000860+000000 _RESET
+ .R_FDL_Text      00002d48+000094 _R_FDL_CancelRequest
+ .R_FDL_Text      000022f4+000116 _R_FDL_Execute
+ .R_FDL_Text      000021e8+000042 _R_FDL_FCUFct_CheckFatalError
+ .R_FDL_Text      000021b8+000030 _R_FDL_FCUFct_ChkReady
+ .R_FDL_Text      00001468+000024 _R_FDL_FCUFct_ChkReg_Asm
+ .R_FDL_Text      000020d4+000050 _R_FDL_FCUFct_ChkStartable
+ .R_FDL_Text      00002124+000030 _R_FDL_FCUFct_ChkSuspendable
+ .R_FDL_Text      000014ee+000074 _R_FDL_FCUFct_ClearStatus
+ .R_FDL_Text      0000148c+000062 _R_FDL_FCUFct_ForcedStop
+ .R_FDL_Text      000016d0+00005a _R_FDL_FCUFct_GetDFSize
+ .R_FDL_Text      00001d24+0000bc _R_FDL_FCUFct_GetStat
+ .R_FDL_Text      000019da+0000d4 _R_FDL_FCUFct_InitRAM
+ .R_FDL_Text      00001aae+0000ae _R_FDL_FCUFct_InitRAM_Asm..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_hw_access.
+ .R_FDL_Text      00001fba+00011a _R_FDL_FCUFct_ReadOperation
+ .R_FDL_Text      0000219e+00001a _R_FDL_FCUFct_Resume
+ .R_FDL_Text      0000216e+000030 _R_FDL_FCUFct_ResumeChkNeed
+ .R_FDL_Text      0000172a+000214 _R_FDL_FCUFct_SetFrequency
+ .R_FDL_Text      00001f0c+0000ae _R_FDL_FCUFct_StartBCEraseOperation
+ .R_FDL_Text      00001de0+00012c _R_FDL_FCUFct_StartWriteOperation
+ .R_FDL_Text      00002154+00001a _R_FDL_FCUFct_Suspend
+ .R_FDL_Text      00001cda+00004a _R_FDL_FCUFct_SwitchMode_Check
+ .R_FDL_Text      00001c02+0000d8 _R_FDL_FCUFct_SwitchMode_Start
+ .R_FDL_Text      00001562+00003a _R_FDL_FCUFct_Switch_FAEINT
+ .R_FDL_Text      0000193e+00009c _R_FDL_FCUFct_VerifyChecksum
+ .R_FDL_Text      00002bac+000008 _R_FDL_GetVersionString
+ .R_FDL_Text      00002aba+0000f2 _R_FDL_Handler
+ .R_FDL_Text      000024c6+00004c _R_FDL_Handler_BusyAndSuspendPossible..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_user_if.
+ .R_FDL_Text      0000240a+0000bc _R_FDL_Handler_CancelReq..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_user_if.
+ .R_FDL_Text      00002512+00011a _R_FDL_Handler_ChkResume..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_user_if.
+ .R_FDL_Text      0000276c+000136 _R_FDL_Handler_MultiOperation..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_user_if.
+ .R_FDL_Text      000028a2+000218 _R_FDL_Handler_OperationStates..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_user_if.
+ .R_FDL_Text      0000262c+000072 _R_FDL_Handler_ReactOnFatalErrors..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_user_if.
+ .R_FDL_Text      0000269e+0000ce _R_FDL_Handler_StatusCheckAndSuspendOnReady..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_user_if.
+ .R_FDL_Text      0000133a+000020 _R_FDL_IFct_CalcFOpUnitCnt_BC
+ .R_FDL_Text      0000135a+00009c _R_FDL_IFct_ChkAccessBoundaries
+ .R_FDL_Text      000013f6+000072 _R_FDL_IFct_ChkAccessRight..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_hw_access.
+ .R_FDL_Text      00001b5c+0000a6 _R_FDL_IFct_ExeCodeInRAM..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_hw_access.
+ .R_FDL_Text      0000159c+00002a _R_FDL_IFct_GetBWCAdd..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_hw_access.
+ .R_FDL_Text      000015c6+000086 _R_FDL_IFct_GetFWParam..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_hw_access.
+ .R_FDL_Text      0000164c+000084 _R_FDL_IFct_GetFWParam_Asm..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_hw_access.
+ .R_FDL_Text      00001312+000006 _R_FDL_IFct_ReadMemoryU08..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_hw_access.
+ .R_FDL_Text      00001318+000006 _R_FDL_IFct_ReadMemoryU16..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_hw_access.
+ .R_FDL_Text      0000130c+000006 _R_FDL_IFct_ReadMemoryU32..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_hw_access.
+ .R_FDL_Text      0000131e+00000a _R_FDL_IFct_WriteMemoryU08
+ .R_FDL_Text      00001328+00000a _R_FDL_IFct_WriteMemoryU16..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_hw_access.
+ .R_FDL_Text      00001332+000008 _R_FDL_IFct_WriteMemoryU32..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_hw_access.
+ .R_FDL_Text      0000306e+00002a _R_FDL_Init
+ .R_FDL_Text      0000222a+0000ca _R_FDL_InitVariables
+ .R_FDL_Text      00002c12+000054 _R_FDL_ResumeRequest
+ .R_FDL_Text      00002c66+000094 _R_FDL_StandBy
+ .R_FDL_Text      00002bb4+00005e _R_FDL_SuspendRequest
+ .R_FDL_Text      00002ffe+000036 _R_FDL_UFct_EndCurrentOperation..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_user_if.
+ .R_FDL_Text      00002ddc+000222 _R_FDL_UFct_FlashOpStart..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_user_if.
+ .R_FDL_Text      00003034+00003a _R_FDL_UFct_StateNotStandBy..D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_user_if.
+ .R_FDL_Text      00002cfa+00004e _R_FDL_WakeUp
+ .text            000008f8+0001ca _SampleApp_FDL_Control
+ .text            000010e4+00006a __Exit
+                  00000000+000000 ___atexit_cleanup_func
+                  00000000+000000 ___cpp_exception_cleanup
+                  00000000+000000 ___cpp_exception_init
+ .syscall         000012e4+000006 ___dotsyscall
+ .text            0000127c+000008 ___gh_errno_ptr
+ .text            00001284+00000a ___gh_get_errno
+                  00000000+000000 ___gh_iob_init
+ .text            00001270+000002 ___gh_lock_init
+ .text            00001272+00000a ___gh_set_errno
+ .text            0000126c+000002 ___ghsLock
+ .text            0000126e+000002 ___ghsUnlock
+                  00000000+000000 ___ghs_GetCurrentThreadID
+                  00000000+000000 ___ghs_GetCurrentThreadName
+                  00000000+000000 ___ghs_InterruptLock
+                  00000000+000000 ___ghs_InterruptUnlock
+                  00000000+000000 ___ghs_RunTimeErrorDetected
+ .text            0000114e+000042 ___ghs_at_exit
+                  00000000+000000 ___ghs_board_cache_sync
+                  00000000+000000 ___ghs_board_devices_init
+                  00000000+000000 ___ghs_board_memory_init
+                  00000000+000000 ___ghs_call_table
+                  00000000+000000 ___ghs_checksum
+                  00000000+000000 ___ghs_coverage_init
+                  00000000+000000 ___ghs_cpp_exception_cleanup
+                  00000000+000000 ___ghs_cpp_exception_init
+                  00000000+000000 ___ghs_decompress
+ .text            00000c0a+00035e ___ghs_ind_crt0
+ .text            000011b2+0000ba ___ghs_ind_crt1
+ .syscall         000012e4+000006 ___ghs_initial_dotsyscall
+                  00000002+000000 ___ghs_log_fee_level
+                  00000000+000000 ___ghs_manprf_init
+                  00000000+000000 ___ghs_rambootcodeend
+                  00000000+000000 ___ghs_rambootcodestart
+                  00000000+000000 ___ghs_rombootcodeend
+                  00000000+000000 ___ghs_rombootcodestart
+                  00000000+000000 ___ghs_set_stack_chk_guard
+ .text            00001190+000022 ___ghs_syscall
+                  00000000+000000 ___ghs_undefined_func
+ .fixaddr         00001290+000000 ___ghsbegin_fixaddr
+ .fixtype         00001290+000000 ___ghsbegin_fixtype
+                  00000000+000000 ___ghsbegin_picbase
+                  00000000+000000 ___ghsbegin_pidbase
+ .robase          00000668+000000 ___ghsbegin_robase
+                  00000000+000000 ___ghsbegin_sda_end
+                  00000000+000000 ___ghsbegin_sda_start
+ .sdabase         fede0448+000000 ___ghsbegin_sdabase
+ .secinfo         00001290+000000 ___ghsbegin_secinfo
+ .secinfo         000012b4+000000 ___ghsbinfo_aclear
+ .secinfo         000012e4+000000 ___ghsbinfo_acopy
+ .secinfo         000012e4+000000 ___ghsbinfo_bcopy
+ .secinfo         00001290+000024 ___ghsbinfo_clear
+ .secinfo         000012e4+000000 ___ghsbinfo_comacopy
+ .secinfo         000012e4+000000 ___ghsbinfo_comcopy
+ .secinfo         000012e4+000000 ___ghsbinfo_comtcopy
+ .secinfo         000012b4+000030 ___ghsbinfo_copy
+ .secinfo         000012e4+000000 ___ghsbinfo_tcopy
+ .secinfo         000012e4+000000 ___ghseinfo_bcopy
+ .secinfo         000012b4+000000 ___ghseinfo_clear
+ .secinfo         000012e4+000000 ___ghseinfo_comcopy
+ .secinfo         000012e4+000000 ___ghseinfo_copy
+ .fixaddr         00001290+000000 ___ghsend_fixaddr
+ .fixtype         00001290+000000 ___ghsend_fixtype
+ .stack           fede0c80+000000 ___ghsend_stack
+                  00000000+000000 ___lowinit
+ .text            000010c0+000024 ___mcopy
+                  00000000+000000 __cleanup
+ .tdata           fede0480+000000 __ep
+ .text            000010e4+00006a __exit
+                  00000000+000000 __ghs_v800_r20_initializer
+                  00000000+000000 __ghs_v800_r21_initializer
+                  00000000+000000 __ghs_v800_sda_model
+ .sdabase         fede8448+000000 __gp
+ .bss             fede0024+000030 __multiArgs
+ .data            fede0000+000004 __multibufSize
+ .bss             fede005c+0003e8 __multibuffer
+ .text            00000b9e+000004 __multiend
+ .text            00000770+0000ce __start
+ .rosdata         00008668+000000 __tp
+ .text            000008b8+000000 __unused_isr
+ .bss             fede0054+000004 _environ
+ .bss             fede0058+000004 _errno
+ .text            00000ba4+000066 _exit
+ .R_FDL_CodeRam   fede0ce4+000100 _g_fdl_ramCodeBuf_au16
+ .R_FDL_Data      fede0c80+000064 _g_fdl_str
+ .text            00000ac2+0000dc _main
+ .text            00000fd0+0000f0 _memcpy
+ .text            00000f70+000060 _memset
+ .text            00000ba2+000002 _multiBreak
+ .text            00000b9e+000000 _multiCall
+ .R_FDL_Const     00003098+000013 _r_fdl_vStr.R_FDL_GetVersionString.D.3A.5CHVACproject.5CWorkProccess.5C01_CC.5C06_CplxDrv.5CDataFlash_RH850_Doc.5CGHS_DEBUG.5Cobjs.5Cmyprogram.5Cr_fdl_user_if..0
+ .rodata          00000668+000008 _sampleApp_fdlConfig_enu
+                  00000000+000000 _undefined_cleanup
+                  00000000+000000 _undefined_cleanup_func

@@ -1,0 +1,12 @@
+#!gbuild
+[Subproject]
+POW\POW.c
+POW\POW_Cfg.c
+POW\POW_If.c
+IGN\IGN.c
+IGN\Ign_Cfg.c
+IGN\Ign_If.c
+FRAME\FRAME.c
+FRAME\FRAME_Cfg.c
+FRAME\FRAME_If.c
+DET\DET.c

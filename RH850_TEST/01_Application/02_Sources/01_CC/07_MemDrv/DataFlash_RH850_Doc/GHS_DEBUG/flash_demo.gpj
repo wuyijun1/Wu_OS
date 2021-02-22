@@ -1,0 +1,11 @@
+#!gbuild
+primaryTarget=v800_standalone.tgt
+#component top_level_project
+[Project]
+	-bsp rh850_f1l
+	-G
+	-object_dir=objs
+	:sourceDir=.
+	--ee
+D:\HVACproject\WorkProccess\01_CC\06_CplxDrv\DataFlash_RH850_Doc\FDL\myprogram.gpj		[Program]
+tgt\resources.gpj		[Project]

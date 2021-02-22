@@ -1,0 +1,78 @@
+===============================================================================
+Supported microcontrollers for the RH850 Data Flash Library (FDL) T01
+===============================================================================
+
+The microcontrollers are covered by this package
+
+    RH850/F1x (x = L, M)       GHS  IAR  REC
+    ----------------------------------------
+    R7F701002 ... R7F701003     x    -    x
+    R7F701006 ... R7F701025     x    -    x
+    R7F701028 ... R7F701030     x    -    x
+    R7F701032 ... R7F701034     x    -    x
+    R7F701040 ... R7F701057     x    -    x
+    R7F701544 ... R7F701545     x    -    x
+    R7F701548 ... R7F701549     x    -    x
+    R7F701552 ... R7F701553     x    -    x
+    R7F701564 ... R7F701565     x    -    x
+    R7F701568 ... R7F701569     x    -    x
+    R7F701572 ... R7F701573     x    -    x
+    Sample Application:     RH850/F1L WS sample
+    Tested Microcontroller: RH850/F1L WS sample
+    Note:
+    The clock controller of the RH850/F1M device group differs from RH850/F1L.
+    Please check the RH850/F1M specification before you use the Sample
+    Application with RH850/F1M.
+
+    RH850/F1H                  GHS  IAR  REC
+    ----------------------------------------
+    R7F701501 ... R7F701503     x    -    x
+    R7F701506 ... R7F701508     x    -    x
+    R7F701511 ... R7F701513     x    -    x
+    R7F701521 ... R7F701522     x    -    x
+    R7F701524 ... R7F701529     x    -    x
+    Sample Application:     RH850/F1H WS sample
+    Tested Microcontroller: RH850/F1H WS sample
+
+    RH850/F1K                  GHS  IAR  REC
+    ----------------------------------------
+    R7F701602 ... R7F701603     x    -    x
+    R7F701542 ... R7F701543     x    -    x
+    R7F701557                   x    -    x
+    R7F701546 ... R7F701547     x    -    x
+    R7F701610 ... R7F701613     x    -    x
+    R7F701560 ... R7F701563     x    -    x
+    R7F701577                   x    -    x
+    R7F701566 ... R7F701567     x    -    x
+    R7F701620 ... R7F701623     x    -    x
+    R7F701580 ... R7F701583     x    -    x
+    R7F701597                   x    -    x
+    R7F701586 ... R7F701587     x    -    x
+    Sample Application:     RH850/F1K WS sample
+    Tested Microcontroller: RH850/F1K WS sample
+
+    RH850/D1x (x = L, M)       GHS  IAR  REC
+    ----------------------------------------
+    R7F701401 ...R7F701408      x    -    x
+    R7F701410 ...R7F701412      x    -    x
+    R7F701421 ...R7F701423      x    -    x
+    R7F701428                   x    -    x
+    R7F701430 ...R7F701432      x    -    x
+    Sample Application:     RH850/D1x WS sample
+    Tested Microcontroller: RH850/D1x WS sample
+
+========================
+
+Customers using other than above device groups:
+Please contact Renesas regarding Code and Data Flash Self-Programming support 
+of your devices. Refer to the user's manual of this library (chapter 1) for 
+Renesas contact.
+
+===============================================================================
+End of supported microcontrollers for the RH850 Data Flash Library (FDL) T01
+===============================================================================
+
+
+
+
+
